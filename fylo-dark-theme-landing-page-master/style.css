@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root{
+--Dark-Blue-email: hsl(217, 28%, 15%);
+--Dark-Blue-main : hsl(218, 28%, 13%);
+--Dark-Blue-footer : hsl(216, 53%, 9%);
+--Dark-Blue-testi: hsl(219, 30%, 18%);
+
+
+--Cyan-inside : hsl(176, 68%, 64%);
+--Blue-inside : hsl(198, 60%, 50%);
+--Light-Red-error: hsl(0, 100%, 63%);
+
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+	font-family: sans-serif;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background: var(--Dark-Blue-main);
+	color: var(--White);
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+}
+/* styling for the header*/
+.header{
+	background:var(--Dark-Blue-email);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:40px 100px;
+}
+.navbar li {
+	padding: 20px 40px;
+	list-style: none;
+	display: inline-flex;
+}
+.navbar li a{
+	text-decoration: none;
+	color: var(--White);
+}
+
+/* styling for the landing page*/
+#header{
+	background: var(--Dark-Blue-email);
+	text-align: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#header h2{
+	margin:20px auto;
+}
+#header p{
+	margin:20px auto;
+}
+.header-container{
+	padding:0px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#header h2{
+	width: 50%;
+	font-family: 'Raleway',sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 2.75em;
+	font-weight: 700;
+}
+#header p{
+	width: 450px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.header-container .header-btn{
+	border-radius: 30px;
+	outline: none;
+	border:none;
+	color: var(--White);
+	padding:10px 60px 10px 60px;
+	background:var(--Blue-inside);
+}
+
+
+/* styling for the feature section */
+.feature-container{
+	background: var(--Dark-Blue-main);
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:40px 100px;
+/*	margin: 0 0 150px 0;*/
+}
+.feature-container .box{
+	text-align: center;
+	width: 420px;
+	height: auto;
+	padding: 20px;
+	margin:20px 40px;
+}
+.feature-container .box img{
+	height: 70px;
+}
+.feature-container .box > *{
+	margin:10px 0;
+}
+
+/* styling for the team */
+.feature-container-second{
+	background:var(--Dark-Blue-main);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+
+}
+.feature-container-second .feature-left img{
+	width: 600px;
+	padding: 0px 40px 0px 40px;
+}
+.feature-container-second .feature-right h2{
+	text-align: left;
+	font-size: 2.75em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+.feature-container-second .feature-right p{
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: 400;
+}
+.feature-container-second .feature-right > *{
+	margin:20px auto;
+}
+.feature-container-second .feature-right a{
+	text-decoration: none;
+	color: var(--Cyan-inside);
+	border-bottom: 1px solid var(--Cyan-inside);
+	padding-bottom: 3px;
+
+}
+.feature-container-second .feature-right img{
+	margin-left: 5px;
+}
+
+/* styling for the testimonials*/
+#quote{
+	background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 8% 0%;
+}
+.testimonial-container{
+	width: 100%;
+	background:var(--Dark-Blue-main);
+	margin:150px 0;
+}
+.testimonial-container .cust-box{
+	margin:0 20px;
+	margin-top: 30px;
+    border-radius: 3px;
+    background:var(--Dark-Blue-testi);
+    width: 350px;
+    padding: 20px 30px;
+    box-shadow: 0px 8px 34px 0px rgba(0,0,0,0.1);
+}
+.testimonial-container .cust-box > *{
+	margin:20px 0;
+}
+
+.testimonial-container .cust-box .imgbox{
+	font-size: 0.8em;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.testimonial-container .cust-box .imgbox img{
+	width:30px;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* styling for the get access box */
+.getaccess-container{
+	width: 60%;
+	z-index: 2;
+	background:var(--Dark-Blue-email);
+	margin: auto auto -130px auto;
+	text-align: center;
+	padding:10px 60px;
+	border-radius: 10px;
+	position:relative;
+	box-shadow: 5px 5px 5px rgb(0,0,0 / 20%);
+}
+.getaccess-container h2{
+	font-family: 'Raleway',sans-serif;
+	font-size: 2.25em;
+}
+.getaccess-container #email{
+	width: 60%;
+	padding:13px 30px;
+	border-radius: 30px;
+	outline: none;
+	border:none;
+	margin-right: 20px;
+}
+#btn-subscribe{
+	width: 30%;
+	font-family: inherit;
+    font-size: 0.9em;
+    color: white;
+    padding:13px 30px;
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 30px;
+  	font-weight: bold;
+    border: none;
+}
+.getaccess-container > * {
+	margin:20px 0;
+}
+
+/* styling for the footer-page */
+footer{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+    background:var(--Dark-Blue-footer);
+    color: #ffffff;
+    padding:200px 70px 70px 70px;
+}
+.column > * {
+	margin-bottom: 10px;
+}
+#footer-logo{
+	justify-content: flex-start;
+    margin-bottom: 20px;
+}
+#footer-info{
+    justify-content: space-between;
+
+}
+#location{
+	width: 30%;
+}
+#location > * {
+	justify-content: flex-start;
+	align-items: center;
+}
+#contact > * {
+	justify-content: flex-start;
+	align-items: center;	
+}
+#phone-icon{
+    width: 1em;
+    margin-right: 10px;
+}
+#email-icon{
+    width: 1em;
+    margin-right: 10px;   
+}
+#map-icon{
+	width: 1em;
+	margin-top: -35px;
+	margin-right: 10px;
+}
+#footer-nav {
+	list-style: none;
+}
+#footer-nav li{
+	margin-bottom: 10px;
+}
+#socmed a{
+    color: white;
+    align-self: start;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
